@@ -1,0 +1,89 @@
+:root {
+    --primary: #22223b;
+    --accent: #4a4e69;
+    --bg: #f2e9e4;
+    --highlight: #9a8c98;
+    --border: #c9ada7;
+    --code-bg: #1a1a1a;
+    --code: #f2e9e4;
+}
+
+body {
+    font-family: system-ui, sans-serif;
+    background: var(--bg);
+    color: var(--primary);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: var(--accent);
+    color: #fff;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+main {
+    max-width: 700px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 16px 0 #0001;
+}
+
+.controls {
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 0.2rem;
+}
+
+select {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid var(--border);
+    border-radius: 5px;
+}
+
+.demo-area {
+    margin-bottom: 1.5rem;
+    padding: 1.5rem;
+    border: 1.5px solid var(--border);
+    border-radius: 8px;
+    background: var(--bg);
+}
+
+.demo-area h2 {
+    margin-top: 0;
+}
+
+.font-info {
+    background: var(--highlight);
+    color: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.font-info code {
+    background: var(--code-bg);
+    color: var(--code);
+    padding: 0.5em 1em;
+    border-radius: 4px;
+    display: inline-block;
+    margin-top: 0.5em;
+    font-size: 1em;
+    font-family: 'Fira Mono', 'Consolas', 'Menlo', 'Monaco', monospace;
+}
+
+footer {
+    text-align: center;
+    margin: 3rem 0 1rem 0;
+    color: var(--accent);
+    font-size: 1.05em;
+}
